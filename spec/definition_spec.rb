@@ -48,8 +48,10 @@ describe('Definition') do
     it("returns a definition by its id number") do
       test_definition = Definition.new("xxx")
       test_definition.save()
-      test_definition2 = Definition.save()
+      test_definition2 = Definition.new("yyy")
+      test_definition2.save()
       expect(Definition.find(test_definition.id())).to(eq(test_definition))
     end
   end
+# end
 end
