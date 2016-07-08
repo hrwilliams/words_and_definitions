@@ -9,4 +9,11 @@ describe(Word) do
       expect(test_word.word_string()).to(eq("trill"))
     end
   end
+
+  describe('#id') do
+    it ("returns the id of the word") do
+      test_word = Word.new("trill")
+      expect(test_word.name()).to(eq("trill"))
+    end
+  end
 end
