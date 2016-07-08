@@ -43,4 +43,13 @@ describe('Definition') do
       expect(test_definition.id()).to(eq(1))
     end
   end
-end  
+
+  describe(".find") do
+    it("returns a definition by its id number") do
+      test_definition = Definition.new("xxx")
+      test_definition.save()
+      test_definition2 = Definition.save()
+      expect(Definition.find(test_definition.id())).to(eq(test_definition))
+    end
+  end
+end
