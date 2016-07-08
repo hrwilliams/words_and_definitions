@@ -38,7 +38,7 @@ describe('Definition') do
 
   describe('#id') do
     it("returns the id of the definition") do
-      test_definition = Definition.new("xxx")
+      test_definition = Definition.new("to be true and real")
       test_definition.save()
       expect(test_definition.id()).to(eq(1))
     end
@@ -46,12 +46,11 @@ describe('Definition') do
 
   describe(".find") do
     it("returns a definition by its id number") do
-      test_definition = Definition.new("xxx")
+      test_definition = Definition.new("to be true and real")
       test_definition.save()
-      test_definition2 = Definition.new("yyy")
+      test_definition2 = Definition.new("a vibratory sound")
       test_definition2.save()
       expect(Definition.find(test_definition.id())).to(eq(test_definition))
     end
   end
-# end
 end
