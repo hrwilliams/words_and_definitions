@@ -12,8 +12,8 @@ describe('Definition') do
 
   describe(".all") do
     it("is empty at first") do
-      expect(definition.all()).to(eq([]))
+      expect(Definition.all()).to(eq([]))
     end
   end
 
-end  
+end
