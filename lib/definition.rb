@@ -3,10 +3,15 @@ class Definition
 
   define_method(:initialize) do |definition_string|
     @definition_string = definition_string
+    @id = @@definitions.length().+(1)
   end
 
   define_method(:definition_string) do
     @definition_string
+  end
+
+  define_method(:id) do
+    @id
   end
 
   define_singleton_method(:all) do
