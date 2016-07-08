@@ -9,4 +9,11 @@ describe('Definition') do
       expect(test_definition.definition_string()).to(eq("xxx"))
     end
   end
+
+  describe(".all") do
+    it("is empty at first") do
+      expect(definition.all()).to(eq([]))
+    end
+  end
+
 end  
