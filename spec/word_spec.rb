@@ -16,4 +16,11 @@ describe(Word) do
       expect(test_word.id()).to(eq("1"))
     end
   end
+
+  describe('#word_definitions') do
+    it("initially returns an empty array of word definitions for the word") do
+      test_word = Word.new("trill")
+      expect(test_word.word_definitions()).to(eq([]))
+    end
+  end
 end
