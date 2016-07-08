@@ -13,7 +13,7 @@ describe(Word) do
   describe('#id') do
     it ("returns the id of the word") do
       test_word = Word.new("trill")
-      expect(test_word.name()).to(eq("trill"))
+      expect(test_word.id()).to(eq("1"))
     end
   end
 end
