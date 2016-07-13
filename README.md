@@ -12,7 +12,7 @@ _This is a web application in which the user can enter words and definitions and
 ## Setup/Installation Requirements
 
  * _Open a web browser_
- * _<a href="https://sheltered-island-36354.herokuapp.com/Click here to open app in your browser on Heroku</a>_
+ * _<a href="https://sheltered-island-36354.herokuapp.com/">Click here to open app in your browser on Heroku</a>_
 
 
 ## Known Bugs
